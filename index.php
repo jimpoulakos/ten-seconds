@@ -13,6 +13,7 @@ include './bootstrap.php';
 load_database();
 
 /*
+// This is the query to build the database table for this application.
 $sql = "create table swf_post ( id int(11) not null auto_increment primary key, message varchar(140), created_on datetime ) engine=InnoDb";
 ORM::get_db()->exec($sql);
 //*/
