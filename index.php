@@ -175,7 +175,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 							// First thing to do is remove any old posts by Array.shift() until we match the first response id.
 							while(old_first_id != new_first_id && self._items.length > 0){
 								self._items.shift();
-								old_first_id = self._items[0].id;
+								old_first_id = self._items.length > 0? self._items[0].id: -1;
 							}
 
 							// Loop through each response item, skipping anything that matches.
