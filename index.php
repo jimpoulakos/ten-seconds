@@ -116,7 +116,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 					</div>
 					<div class="panel-body">
 						<form role="form">
-							<div class="form-group"><label for="message"></label><input type="text" class="form-control" id="message" placeholder="Say Something" ng-model="messages.message"></div>
+							<div class="form-group" ng-class="{'has-warning has-feedback': messages.message.length>140}">
+								<label for="message" class="sr-only control-label">Say Something</label>
+								<input type="text" class="form-control" id="message" placeholder="Say Something" ng-model="messages.message">
+								<span class="pull-right help-block" ng-show="messages.message.length>140">
+									<em><i class="glyphicon glyphicon-warning-sign" ></i> Your text is too long and will be automatically shortened. ({{messages.message.length}} chars)</em>
+								</span>
+								<span class="pull-right help-block text-success" ng-hide="messages.message.length>140"><em>({{messages.message.length}} chars)</em></span>
+							</div>
 						</form>
 					</div>
 					<div class="panel-body">
