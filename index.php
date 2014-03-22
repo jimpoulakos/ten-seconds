@@ -125,7 +125,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 					<div class="panel-footer">
 						<p>
-						Built with love using <a target="_blank" href="http://angularjs.org/">AngularJS</a>, <a target="_blank" href="http://getbootstrap.com/">Twitter Bootstrap</a>, and <a target="_blank" href="http://www.php.net/">PHP</a>.
+						Built with love using <a target="_blank" href="http://angularjs.org/">AngularJS</a>, <a target="_blank" href="http://getbootstrap.com/">Twitter Bootstrap</a>, <a target="_blank" href="http://j4mie.github.io/idiormandparis/">Idiorm &amp; Paris</a>, and <a target="_blank" href="http://www.php.net/">PHP</a>.
 						</p>
 					</div>
 				</div>
